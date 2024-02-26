@@ -1,0 +1,28 @@
+.stripes {
+    height: 2em;
+    background-color: #007bff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.top-stripe {
+    top: 0;
+}
+.bottom-stripe {
+    top: auto;
+    bottom: 0;
+}
+.bottom-image {
+    max-width: 100%; 
+    height: auto; 
+	margin: 0;
+	padding: 0;
+}
+.scrollable-area {
+    max-height: 300px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #dee2e6;
+    padding-top: 10px;
+}

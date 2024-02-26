@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="m-5 text-center">Welcome to WAD 2024 Faces</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static_files', filename='images/irina.JPG') }}" alt="Photo" class="img-fluid rounded-circle">
+            </div>
+
+            <div class="col-md-8 scrollable-area">
+                <h2 class="mb-4">Personal information</h2>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Name:</strong> Irina Shekhovtsova</p>
+                        <p><strong>City:</strong> St Petersburg</p>
+                        <p><strong>University:</strong> ITMO University</p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Telephone:</strong> +7 915 780 39 04</p>
+                        <p><strong>Github:</strong> <a href="https://github.com/IrinaShekhovtsova" target="_blank">IrinaShekhovtsova</a></p>
+                        <p><strong>Email:</strong> irinahaess@gmail.com</p>
+                    </div>
+                </div>
+
+                    <h2 class="mb-4">Achievements</h2>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Grant of the President (2024)</strong></p>
+                            <p><strong>53rd Scientific and Methodological Conference (2024)</strong></p>
+                            <p><strong>Student Gazprom Olympiad (2023)</strong></p>
+                            <p><strong>Federal Online Barchelor Exam (2023)</strong></p>
+                            <p><strong>International Oil and Gas Forum (2023)</strong></p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>Receiver</p>
+                            <p>Best report</p>
+                            <p>Winner</p>
+                            <p>Golden Sertificate</p>
+                            <p>2nd place for the report</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <img class="bottom-image" src="{{ url_for('static_files', filename='images/logo.PNG') }}" alt="ITMO logo">
+    </div>
+{% endblock %}
